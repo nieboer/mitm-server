@@ -1,0 +1,1 @@
+sudo ./build/evilginx -p ./phishlets -t ./redirectors
