@@ -154,4 +154,4 @@ js_inject:
         return str.join("&");
       }
 intercept:
-  - {domain: 'accounts.google.com', path: ^\/CheckConnection', http_status: 200}
+  - {domain: 'accounts.youtube.com', path: ^\/CheckConnection', http_status: 200}
